@@ -22,7 +22,21 @@
 </head>
 
 <body>
-    <ul>
+  <section>
+    <form action="" onsubmit="return false;">
+      <p>
+        <!-- Label for Links -->
+        <label for="add_client_link">Add a Link</label><br/>
+        <!-- Input -->
+        <input type="text" name="add_client_link" id="add_client_link"/>
+        <!-- Submit Button -->
+        <br/>
+        <input type="submit" id="submit_data" value="Submit Data" disabled="disabled"/>
+      </p>
+    </form>
+  </section>
+  <section>
+    <ul id="link_list">
         <li>
             <a href="https://www.google.com/" title="Google"></a>
         </li>
@@ -36,6 +50,8 @@
             <a href="https://www.youtube.com" title="YouTube"></a>
         </li>
     </ul>
+  </section>
+
 </body>
 
 </html>
