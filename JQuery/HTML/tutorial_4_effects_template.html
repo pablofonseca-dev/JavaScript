@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- JQuery CDN Minified -->
+  <!-- jQuery Core Version: 3.4.1 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Native Local Scripts -->
+  <script>
+      //Test JQuery CDN
+      $(document).ready(function(){
+          console.log("JQuery Loaded");
+      });
+  </script>
+  <!-- Styles -->
+  <style media="screen">
+    .box{
+      width:300px;
+      height: 50px;
+      border: 1px solid #000;
+      background: #ddd;
+      margin-top:2%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+    }
+  </style>
+  <!-- Script -->
+  <script src="../JS/jquery_effects.js"></script>
+</head>
+<body>
+  <button id="show">
+    Show
+  </button>
+  <button id="hide">
+    Hide
+  </button>
+  <div class="box show_effect">
+    Show Effect
+  </div>
+  <br/>
+  <br/>
+  <button id="fade_in">
+    Fade In
+  </button>
+  <button id="fade_out">
+    Fade Out
+  </button>
+  <div class="box fade_effect">
+    Fade Effect
+  </div>
+  <br/>
+  <br/>
+  <button id="fade_to_show">
+    Fade To: Show
+  </button>
+  <button id="fade_to_hide">
+    Fade To: Hide
+  </button>
+  <div class="box fade_to_effect">
+    Fade To Effect
+  </div>
+  <br/>
+  <br/>
+  <button id="toggle_button">
+    Toggle!
+  </button>
+  <div class="box toggle_effect">
+    Toggle Effect
+  </div>
+  <br/>
+  <br/>
+  <button id="animate_button">
+    Animate!
+  </button>
+  <div class="box animate_effect">
+    Animate Effect
+  </div>
+  <br/>
+  <br/>
+  <button id="callback_button">
+    Animate and CallBack!
+  </button>
+  <div class="box callback_animation">
+    CallBack Animation
+  </div>
+</body>
+</html>
