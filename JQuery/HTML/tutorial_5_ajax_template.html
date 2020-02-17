@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- JQuery CDN Minified -->
+    <!-- jQuery Core Version: 3.4.1 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Native Local Scripts -->
+    <script>
+        //Test JQuery CDN
+        $(document).ready(function() {
+            console.log("JQuery Loaded");
+        });
+    </script>
+    <!-- Styles -->
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Calibri;
+        }
+        
+        .box {
+            width: 300px;
+            height: 50px;
+            border: 1px solid #000;
+            background: #ddd;
+            margin-top: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+        }
+        
+        .data {
+            width: 50%;
+            border: 1px solid #000;
+            background: #fff;
+            margin: 0 !important;
+            margin-top: 2%;
+            display: block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            overflow: scroll;
+        }
+        
+        section {
+            padding-bottom: 5%;
+            margin-left: 2%;
+            padding: 4%;
+        }
+        
+        form {
+            padding-top: 2%;
+        }
+        
+        input {
+            border: none;
+            border: 1px solid #ccc;
+        }
+        
+        input[type="text"],
+        input[type="email"] {
+            padding: 20px 60px 20px 3px;
+            display: flex;
+            font-size: 20px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            text-transform: uppercase;
+            padding: 10px 20px;
+        }
+    </style>
+    <!-- Script -->
+    <script src="../JS/jquery_ajax.js"></script>
+</head>
+
+<body>
+
+    <section>
+        <!-- Load Ajax Request -->
+        <div class="data">
+        </div>
+    </section>
+
+    <section>
+        <!-- Load a get http protocol request -->
+        <header>
+            <h2>JQUERY AJAX HTTPS GET REQUEST</h2>
+        </header>
+        <div class="information_wrapper">
+            <br>
+            <br>
+            <ul>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <header>
+            <h2>Create Users With POST HTTP Request</h2>
+        </header>
+        <div class="form_wrapper">
+            <form id="form" onsubmit="return false;" action="">
+                <p>
+                    <!-- Label -->
+                    <label for="user_name">
+                        First Name:
+                    </label>
+                    <!-- Input -->
+                    <input type="text" name="user_name" placeholder="John" id="user_name" />
+                    <br/>
+                    <!-- ### -->
+                    <!-- Label -->
+                    <label for="user_lastName">
+                        Last Name:
+                    </label>
+                    <!-- Input -->
+                    <input type="text" name="user_lastName" placeholder="Doe" id="user_lastName" />
+                    <br/>
+                    <!-- ### -->
+                    <!-- Label -->
+                    <label for="user_email">
+                        E-mail Address:
+                    </label>
+                    <!-- Input -->
+                    <input type="text" name="user_email" placeholder="johndoe@gmail.com" id="user_email" />
+                    <br/>
+                    <br/>
+                    <!-- Controls -->
+                    <input type="submit" id="submit_data" value="Submit Data" />
+                    <input type="reset" value="Reset All" />
+                    <!-- Message Box -->
+                    <br/>
+                    <span id="notification_box">
+                        <strong></strong>
+                    </span>
+            </form>
+        </div>
+    </section>
+    <section>
+        <header>
+            <h2>Create Users With POST Method HTTP Request</h2>
+        </header>
+        <div class="form_wrapper">
+            <form id="ajaxProve" onsubmit="return false;" action="">
+                <p>
+                    <!-- Label -->
+                    <label for="userName">
+                        First Name:
+                    </label>
+                    <!-- Input -->
+                    <input type="text" name="userName" placeholder="John" id="userName" />
+                    <br/>
+                    <!-- ### -->
+                    <!-- Label -->
+                    <label for="userLastName">
+                        Last Name:
+                    </label>
+                    <!-- Input -->
+                    <input type="text" name="userLastName" placeholder="Doe" id="userLastName" />
+                    <br/>
+                    <!-- ### -->
+                    <!-- Label -->
+                    <label for="userEmail">
+                        E-mail Address:
+                    </label>
+                    <!-- Input -->
+                    <input type="email" name="userEmail" placeholder="johndoe@gmail.com" id="userEmail" />
+                    <br/>
+                    <br/>
+                    <!-- Controls -->
+                    <input type="submit" id="submitData" value="Submit Data" />
+                    <input type="reset" value="Reset All" />
+                    <!-- Message Box -->
+                    <span id="notificationBox">
+                        <strong></strong>
+                    </span>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

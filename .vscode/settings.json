@@ -1,5 +1,6 @@
 {
     "liveServer.settings.host": "127.0.0.2",
     "editor.fontFamily": "\"Fira Mono\", Consolas, 'Courier New', monospace", 
-    "files.encoding": "utf8"
+    "files.encoding": "utf8",
+    "python.pythonPath": "C:\\Users\\pablo\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
 }
